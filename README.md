@@ -13,6 +13,23 @@ ______________________________________________________________________
 
 ![**Review process.** The STL review process begins by extracting the representation **CLS**(xᵢ) of the content **xᵢ** and generating its corresponding classification **ŷᵢ**. After calibrating the CP algorithm, we generate the prediction set **C(xᵢ)** for classification. If the size of **C(xᵢ)** is 2 (i.e., the total number of possible classes in the problem), the comment is flagged for review by a human moderator. Otherwise, the classifier’s output is considered confident, and **ŷᵢ** is deemed a reliable prediction of the toxicity of **xᵢ**. For the composite STL models, in addition to generating the classification **ŷᵢ**, we also compute the annotation disagreement estimate **di(xᵢ)**, a regression value learned from **X** and **A**. Once the CP algorithm for regression is calibrated, we produce the confidence interval **I(xᵢ)**. If this interval exceeds a predefined ambiguity threshold **γ**, the comment is marked for human review. Otherwise, we rely on **C(xᵢ)** to assess the confidence of the classifier’s output. In the MTL approach, the only difference from the composite model is that both **ŷᵢ** and **di(xᵢ)** are generated from the same representation **CLS(xᵢ)** of the content.](images/Review_process.png)
 </div>
+<p><strong>Figure 1: Review process.</strong> The STL review process begins by extracting the representation 
+<strong>CLS</strong>(x<sub>i</sub>) of the content <strong>x<sub>i</sub></strong> and generating its corresponding 
+classification <strong>ŷ<sub>i</sub></strong>. After calibrating the CP algorithm, we generate the prediction 
+set <strong>C(x<sub>i</sub>)</strong> for classification. If the size of <strong>C(x<sub>i</sub>)</strong> is 2 
+(i.e., the total number of possible classes in the problem), the comment is flagged for review by a human moderator. 
+Otherwise, the classifier’s output is considered confident, and <strong>ŷ<sub>i</sub></strong> is deemed a reliable 
+prediction of the toxicity of <strong>x<sub>i</sub></strong>. For the composite STL models, in addition to generating 
+the classification <strong>ŷ<sub>i</sub></strong>, we also compute the annotation disagreement estimate 
+<strong>d<sub>i</sub>(x<sub>i</sub>)</strong>, a regression value learned from <strong>X</strong> and <strong>A</strong>. 
+Once the CP algorithm for regression is calibrated, we produce the confidence interval <strong>I(x<sub>i</sub>)</strong>. 
+If this interval exceeds a predefined ambiguity threshold <strong>γ</strong>, the comment is marked for human review. 
+Otherwise, we rely on <strong>C(x<sub>i</sub>)</strong> to assess the confidence of the classifier’s output. 
+In the MTL approach, the only difference from the composite model is that both <strong>ŷ<sub>i</sub></strong> 
+and <strong>d<sub>i</sub>(x<sub>i</sub>)</strong> are generated from the same representation 
+<strong>CLS(x<sub>i</sub>)</strong> of the content.
+</p>
+
 
 ## Abstract
 
