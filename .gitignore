@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+src/data/raw/
+src/data/processed/
+src/data/final/
+src/models/
+src/results/
+credentials/kaggle.json
+src/notebooks/model_predictions

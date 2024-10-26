@@ -1,0 +1,17 @@
+model_name: "distilbert/distilbert-base-uncased"
+learning_rate: 0.00002
+weight_decay: 0.01
+
+accumulate_grad_batches: 1
+experiment_name: ["focal_loss_Weighted"] 
+task: ["multitask"]
+disagreement: ["distance"]
+regression_name: ["WeightedBCE","WeightedMSE","WeightedR2ccpLoss"]
+dataset_name: "TheMrguiller/Uncertainty_Toxicity"
+train_file: "data/processed/jigsaw-unintended-bias-in-toxicity-classification_train_data_clean.csv"
+test_file: "data/processed/jigsaw-unintended-bias-in-toxicity-classification_test_data_clean.csv"
+valid_file: "data/processed/jigsaw-unintended-bias-in-toxicity-classification_valid_data_clean.csv"
+data_batch_size: 64
+num_nodes: 1
+fast_dev_run: False
+num_workers: 6

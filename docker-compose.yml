@@ -1,0 +1,23 @@
+version: '1.0'
+
+services:
+  uncertainty_training:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-dev
+    tty: true
+    environment:
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./src:/home/repo/src
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+
+    
+   
