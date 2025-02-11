@@ -143,11 +143,12 @@ This codebase is released under [MIT License](LICENSE).
 If you find our work useful, please consider citing us!
 
 ```bibtex
-@article{,
-  title   = {A Collaborative Content Moderation Framework for
-Toxicity Detection based on Conformalized Estimates of
-Annotation Disagreement},
-  author  = {Guillermo Villate-Castillo and Javier del Ser and Borja Sanz},
-  year    = {2024},
-  journal = {}
+@misc{villatecastillo2024collaborativecontentmoderationframework,
+      title={A Collaborative Content Moderation Framework for Toxicity Detection based on Conformalized Estimates of Annotation Disagreement}, 
+      author={Guillermo Villate-Castillo and Javier Del Ser and Borja Sanz},
+      year={2024},
+      eprint={2411.04090},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.04090}, 
 }
