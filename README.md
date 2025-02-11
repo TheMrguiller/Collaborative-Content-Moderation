@@ -3,8 +3,8 @@
 
 <!---[[Website]](https://eureka-research.github.io)-->
 [[Spotify]](https://podcasters.spotify.com/pod/show/themrguiller/episodes/A-Collaborative-Content-Moderation-Framework-for-Toxicity-Detection-based-on-Conformalized-Estimates-of-Annotation-Disagreement-e2q5rgn)
-[[arXiv]]()
-<!---[[PDF]](https://eureka-research.github.io/assets/eureka_paper.pdf)-->
+[[arXiv]](https://arxiv.org/pdf/2411.04090)
+<!---[[PDF]](https://arxiv.org/pdf/2411.04090)-->
 
 [![Python Version](https://img.shields.io/badge/Python-3.10-blue.svg)](https://github.com/TheMrguiller/Collaborative-Content-Moderation)
 [<img src="https://img.shields.io/badge/Framework-PyTorch-red.svg"/>](https://pytorch.org/)
